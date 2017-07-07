@@ -9,10 +9,8 @@
  * @copyright Copyright (c) 2017 Claude Khedhiri <claude@khedhiri.com>
  */
 
-namespace Emarsys\Test;
-
-use PHPUnit\Framework\TestCase as BaseTestCase;
-
-abstract class TestCase extends BaseTestCase
-{
-}
+return array(
+    'country' => array(
+        'france' => 63,
+    ),
+);

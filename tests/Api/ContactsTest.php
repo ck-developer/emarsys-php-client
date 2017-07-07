@@ -9,10 +9,13 @@
  * @copyright Copyright (c) 2017 Claude Khedhiri <claude@khedhiri.com>
  */
 
-namespace Emarsys\Test;
+namespace Emarsys\Test\Api;
 
-use PHPUnit\Framework\TestCase as BaseTestCase;
+use Emarsys\Test\ApiTestCase;
 
-abstract class TestCase extends BaseTestCase
+class ContactsTest extends ApiTestCase
 {
+    public function testConstructor()
+    {
+    }
 }

@@ -9,10 +9,8 @@
  * @copyright Copyright (c) 2017 Claude Khedhiri <claude@khedhiri.com>
  */
 
-namespace Emarsys\Test;
+namespace Emarsys\Exception;
 
-use PHPUnit\Framework\TestCase as BaseTestCase;
-
-abstract class TestCase extends BaseTestCase
+interface EmarsysException
 {
 }

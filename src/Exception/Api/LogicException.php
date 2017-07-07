@@ -9,10 +9,10 @@
  * @copyright Copyright (c) 2017 Claude Khedhiri <claude@khedhiri.com>
  */
 
-namespace Emarsys\Test;
+namespace Emarsys\Exception\Api;
 
-use PHPUnit\Framework\TestCase as BaseTestCase;
+use Emarsys\Exception\EmarsysException;
 
-abstract class TestCase extends BaseTestCase
+class LogicException extends \LogicException implements EmarsysException
 {
 }

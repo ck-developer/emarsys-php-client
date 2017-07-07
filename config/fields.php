@@ -9,10 +9,14 @@
  * @copyright Copyright (c) 2017 Claude Khedhiri <claude@khedhiri.com>
  */
 
-namespace Emarsys\Test;
-
-use PHPUnit\Framework\TestCase as BaseTestCase;
-
-abstract class TestCase extends BaseTestCase
-{
-}
+return array(
+    'id' => 0,
+    'first_name' => 1,
+    'last_name' => 2,
+    'email' => 3,
+    'birth_date' => 4,
+    'country' => array(
+        'id' => 14,
+        'choices' => '@country',
+    ),
+);

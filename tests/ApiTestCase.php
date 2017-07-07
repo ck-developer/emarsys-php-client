@@ -11,8 +11,6 @@
 
 namespace Emarsys\Test;
 
-use PHPUnit\Framework\TestCase as BaseTestCase;
-
-abstract class TestCase extends BaseTestCase
+class ApiTestCase extends TestCase
 {
 }
