@@ -3,10 +3,10 @@
 /*
  * A php library for using the Emarsys API.
  *
- * @link      https://github.com/ck-developer/emarsys-php-client
- * @package   authy
+ * @link      https://github.com/quitoque/emarsys-php-client
+ * @package   emarsys-php-client
  * @license   MIT
- * @copyright Copyright (c) 2017 Claude Khedhiri <claude@khedhiri.com>
+ * @copyright Copyright (c) 2017 Quitoque <tech@quitoque.com>
  */
 
 namespace Emarsys\Api;
@@ -18,6 +18,11 @@ use Http\Promise\Promise;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 
+/**
+ * Class AbstractApi.
+ *
+ * @author Claude Khedhiri <claude@khedhiri.com>
+ */
 abstract class AbstractApi implements ApiInterface
 {
     /**

@@ -3,10 +3,10 @@
 /*
  * A php library for using the Emarsys API.
  *
- * @link      https://github.com/ck-developer/emarsys-php-client
- * @package   authy
+ * @link      https://github.com/quitoque/emarsys-php-client
+ * @package   emarsys-php-client
  * @license   MIT
- * @copyright Copyright (c) 2017 Claude Khedhiri <claude@khedhiri.com>
+ * @copyright Copyright (c) 2017 Quitoque <tech@quitoque.com>
  */
 
 namespace Emarsys\Test;
@@ -16,6 +16,11 @@ use Emarsys\Emarsys;
 use Emarsys\Exception\Api\NotFoundException;
 use Emarsys\HttpClient\Builder;
 
+/**
+ * Class EmarsysTest.
+ *
+ * @author Claude Khedhiri <claude@khedhiri.com>
+ */
 class EmarsysTest extends TestCase
 {
     /**
@@ -23,6 +28,9 @@ class EmarsysTest extends TestCase
      */
     private $emarsys;
 
+    /**
+     * {@inheritdoc}
+     */
     public function setUp()
     {
         $this->emarsys = new Emarsys('username', 'secret');

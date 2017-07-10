@@ -1,22 +1,22 @@
 {
-    "name": "ck-developer/emarsys-php-client",
+    "name": "quitoque/emarsys-sdk-php",
     "type": "library",
-    "description": "PHP client for emarsys",
-    "keywords": [
-        "emarsys",
-        "api"
-    ],
-    "homepage": "https://github.com/ck-developer/emarsys-php-client",
+    "description": "Emarsys SDK for PHP - Use Emarsys Web Services in your PHP project",
+    "keywords": ["emarsys","api","guzzle","react","psr-7"],
+    "homepage": "https://github.com/quitoque/emarsys-sdk-php",
     "license": "MIT",
     "authors": [
         {
-            "name": "Claude Khedhiri",
-            "email": "claude@khedhiri.com",
-            "homepage": "http://www.khedhiri.com"
+            "name": "QuiToque",
+            "email": "tech@quitoque.fr",
+            "homepage": "https://www.quitoque.fr"
         }
     ],
+    "support": {
+        "issues": "https://github.com/quitoque/emarsys-sdk-php/issues"
+    },
     "require": {
-        "php": "^5.5 || ^7.0",
+        "php": "^5.6 || ^7.0",
         "php-http/httplug": "^1.1",
         "php-http/discovery": "^1.0",
         "php-http/message": "^1.0"
@@ -40,7 +40,14 @@
         }
     },
     "scripts": {
-        "test": "./vendor/bin/phpunit"
+        "test": "vendor/bin/phpunit",
+        "init-hooks": "php .github/hooks/install.php",
+        "post-install-cmd": [
+            "@init-hooks"
+        ],
+        "post-update-cmd": [
+            "@init-hooks"
+        ]
     },
     "extra": {
         "branch-alias": {

@@ -3,10 +3,10 @@
 /*
  * A php library for using the Emarsys API.
  *
- * @link      https://github.com/ck-developer/emarsys-php-client
- * @package   authy
+ * @link      https://github.com/quitoque/emarsys-php-client
+ * @package   emarsys-php-client
  * @license   MIT
- * @copyright Copyright (c) 2017 Claude Khedhiri <claude@khedhiri.com>
+ * @copyright Copyright (c) 2017 Quitoque <tech@quitoque.com>
  */
 
 namespace Emarsys\Mapping;
@@ -14,6 +14,11 @@ namespace Emarsys\Mapping;
 use Emarsys\Exception\Mapping\NotFoundFieldException;
 use Emarsys\Test\TestCase;
 
+/**
+ * Class FieldsTest.
+ *
+ * @author Claude Khedhiri <claude@khedhiri.com>
+ */
 class FieldTest extends TestCase
 {
     /**

@@ -13,30 +13,11 @@ namespace Emarsys\Mapping;
 
 use Emarsys\Exception\Mapping\NotFoundFieldException;
 
-/**
- * Class Fields.
- *
- * @author Claude Khedhiri <claude@khedhiri.com>
- */
-class Fields
+class Events
 {
-    /**
-     * @var array
-     */
     private $mapping = array();
 
-    /**
-     * @var array
-     */
     private $systemFields = array();
-
-    /**
-     * Fields constructor.
-     */
-    public function __construct()
-    {
-        $this->systemFields = require __DIR__.'/../../config/fields.php';
-    }
 
     /**
      * @param array $mapping
@@ -62,11 +43,6 @@ class Fields
         }
     }
 
-    /**
-     * @param $name
-     *
-     * @return int
-     */
     public function findByName($name)
     {
         if (array_key_exists($name, $this->systemFields)) {
